@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Header doc -->
+<title>동원미트큐</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=375,user-scalable=no,viewport-fit=cover">
+<meta name="description" content=""/>
+<meta name="apple-mobile-web-app-title" content="">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:description" content="">
+<link  rel="shortcut icon"  href="../resources/images/favicon.ico"  type="image/x-icon"/>
+<link rel="icon" href="../resources/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../resources/images/favicon.png"/>
+<!-- style -->
+<link rel="stylesheet" href="../resources/css/common.css" media="all"/>
+<link rel="stylesheet" href="../resources/css/contents.css" media="all"/>
+<!-- javascript -->
+<script src="../resources/js/lib/jquery-1.12.4.min.js"></script>
+<script src="../resources/js/lib/jquery-ui-1.12.1.min.js"></script>
+<script src="../resources/js/lib/jquery-migrate-1.4.0.js"></script>
+<script src="../resources/js/plugins.js"></script>
+<script src="../resources/js/ui.js"></script>
+<!--[if lt IE 9]> <script
+src="../resources/js/lib/html5shiv.3.7.3.min.js"></script> <![endif]-->
+</head>
+    <body>
+        <div id="wrap">
+            <div id="skipNavi">
+                <a href="#container">본문 바로가기</a>
+            </div>
+            <header id="header">
+                <button type="button" class="btn_back" onclick="history.go(-1)"><span class="blind">뒤로가기</span></button>
+                <h1>쿠폰함</h1>
+                <a href="./page/cart.html" class="btn_cart">
+                    <span class="blind">장바구니</span>
+                    <i>10</i>
+                </a>
+            </header>
+            <header id="headerBottom">
+                <ul>
+                    <li class="home">
+                        <a href="index.html">홈</a>
+                    </li>
+                    <li class="search">
+                        <a href="#">검색</a>
+                    </li>
+                    <li class="store">
+                        <a href="./page/.html">단골매장</a>
+                    </li>
+                    <li class="mypage">
+                        <a href="./page/.html">마이</a>
+                    </li>
+                </ul>
+            </header>
+            <div id="container">
+                <div class="inner">
+                    <div class="mycoupon_wrap">
+                        <ul class="tabmenu2 tab_motion">
+                            <li><a href="#tab1">내 쿠폰</a></li>
+                            <li><a href="#tab2">만료 쿠폰</a></li>
+                        </ul>
+                        <div id="tab1" class="tab_cont">
+                            <div class="inp_area">
+                                <input type="text" class="input w_100" placeholder="코드를 입력해주세요" title="코드를 입력해주세요">
+                                <button type="button" class="button">조회</button>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>2021.01.01 ~ 2021.01.30</p>
+                                    <strong>회원가입 1,000원 회원가입 1,000원 할인쿠폰</strong>
+                                    <span>사용일 : 다운로드 후 7일간 사용가능</span>
+                                    <span>전 메뉴 사용가능</span>
+                                    <span>전 메뉴 사용가능</span>
+                                    <button type="button">사용하기</button>
+                                </li>
+                                <li class="used">
+                                    <p>2021.01.01 ~ 2021.01.30</p>
+                                    <strong>회원가입 1,000원 할인쿠폰</strong>
+                                    <span>사용일 : 다운로드 후 7일간 사용가능</span>
+                                    <span>전 메뉴 사용가능</span>
+                                    <span>전 메뉴 사용가능</span>
+                                    <button type="button">사용완료</button>
+                                </li>
+                                <!-- <li class="empty">
+                                    발급된 쿠폰이 없습니다.
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div id="tab2" class="tab_cont">
+                            <ul>
+                                <li class="expire">
+                                    <p>2021.01.01 ~ 2021.01.30</p>
+                                    <strong>회원가입 1,000원 회원가입 1,000원 할인쿠폰</strong>
+                                    <span>사용일 : 다운로드 후 7일간 사용가능</span>
+                                    <span>전 메뉴 사용가능</span>
+                                    <span>전 메뉴 사용가능</span>
+                                    <button type="button">기간만료</button>
+                                </li>
+                                <li class="expire">
+                                    <p>2021.01.01 ~ 2021.01.30</p>
+                                    <strong>회원가입 1,000원 할인쿠폰</strong>
+                                    <span>사용일 : 다운로드 후 7일간 사용가능</span>
+                                    <span>전 메뉴 사용가능</span>
+                                    <span>전 메뉴 사용가능</span>
+                                    <button type="button">기간만료</button>
+                                </li>
+                                <!-- <li class="empty">
+                                    만료된 쿠폰이 없습니다.
+                                </li> -->
+                            </ul>
+                        </div>
+                        <h5>유의사항</h5>
+                        <ul class="txt_list">
+                            <li>- 쿠폰은 발급일로부터 사용기한 내 사용하실 수 있습니다.</li>
+                            <li>- 중복 할인이 불가합니다.</li>
+                            <li>- 유효기간이 만료된 쿠폰은 자동으로 만료 쿠폰으로 분류 됩니다.</li>
+                            <li>- 만료 쿠폰 보유기간은 2개월 입니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Header doc -->
+<title>동원미트큐</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=375,user-scalable=no,viewport-fit=cover">
+<meta name="description" content=""/>
+<meta name="apple-mobile-web-app-title" content="">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:description" content="">
+<link  rel="shortcut icon"  href="../resources/images/favicon.ico"  type="image/x-icon"/>
+<link rel="icon" href="../resources/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../resources/images/favicon.png"/>
+<!-- style -->
+<link rel="stylesheet" href="../resources/css/common.css" media="all"/>
+<link rel="stylesheet" href="../resources/css/contents.css" media="all"/>
+<!-- javascript -->
+<script src="../resources/js/lib/jquery-1.12.4.min.js"></script>
+<script src="../resources/js/lib/jquery-ui-1.12.1.min.js"></script>
+<script src="../resources/js/lib/jquery-migrate-1.4.0.js"></script>
+<script src="../resources/js/plugins.js"></script>
+<script src="../resources/js/ui.js"></script>
+<!--[if lt IE 9]> <script
+src="../resources/js/lib/html5shiv.3.7.3.min.js"></script> <![endif]-->
+</head>
+    <body>
+        <div id="wrap">
+            <div id="skipNavi">
+                <a href="#container">본문 바로가기</a>
+            </div>
+            <header id="header">
+                <button type="button" class="btn_back" onclick="history.go(-1)"><span class="blind">뒤로가기</span></button>
+                <h1>스토어</h1>
+                <a href="./page/cart.html" class="btn_cart">
+                    <span class="blind">장바구니</span>
+                    <i>10</i>
+                </a>
+            </header>
+            <header id="headerBottom">
+                <ul>
+                    <li class="home">
+                        <a href="index.html">홈</a>
+                    </li>
+                    <li class="search">
+                        <a href="#">검색</a>
+                    </li>
+                    <li class="store">
+                        <a href="./page/.html">단골매장</a>
+                    </li>
+                    <li class="mypage">
+                        <a href="./page/.html">마이</a>
+                    </li>
+                </ul>
+            </header>
+            <div id="container">
+                <div class="inner">
+                    <div class="store_wrap">
+                        <h4>가까운  매장을 찾아보세요.</h4>
+                        <div class="inp_area">
+                            <div class="area">
+                                <select name="" id="" class="select sel_pk" title="지역을 선택해주세요">
+                                    <option value="">지역을 선택해주세요</option>
+                                    <option value="">서울</option>
+                                </select>
+                                <select name="" id="" class="select sel_pk" title="군/구 선택해주세요">
+                                    <option value="">군/구</option>
+                                    <option value="">서울</option>
+                                </select>
+                            </div>
+                            <div class="store">
+                                <input type="text" class="input w_100" placeholder="매장명이나 주소를 입력해주세요" title="매장명이나 주소를 입력해주세요">
+                                <button type="button" class="button">검색</button>
+                            </div>
+                        </div>
+                        <ul class="store_list">
+                            <li class="on"><button type="button">증산점 1.2km</button></li>
+                            <li><button type="button">응암응암점 1km</button></li>
+                            <li><button type="button">수색점 2km</button></li>
+                            <li><button type="button">새절점 1.2km</button></li>
+                            <li><button type="button">DMC점 1.2km</button></li>
+                        </ul>
+                        <div class="store_map_area">
+                            <!-- map핀 디자인작업 필요합니다. api 연결 후 진행하겠습니다. Aida -->
+                            <div id="map" class="map"></div>
+                            <table>
+                                <caption>매장정보</caption>
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">매장명</th>
+                                        <td>증산점</td>
+                                    </tr>
+                                    <tr>
+    
+                                        <th scope="row">전화번호</th>
+                                        <td>02-1234-1234</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">매장주소</th>
+                                        <td>서울특별시 은평구 증산로 251</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">영업시간</th>
+                                        <td>12:00~23:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(function(){
+            $('.store_list li button').click(function(){
+                $(this).parent('li').addClass('on').siblings().removeClass('on');
+            })
+        })
+    </script>
+</html>

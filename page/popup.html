@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+ <html lang="ko">
+<head>
+<!-- Header doc -->
+<title>동원미트큐</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=375,user-scalable=no">
+<meta name="description" content="" />
+<meta name="apple-mobile-web-app-title" content="">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:description" content="">
+<link rel="shortcut icon" href="../resources/images/favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="../resources/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../resources/images/favicon.png" />
+<!-- style -->
+<link rel="stylesheet" href="../resources/css/common.css" media="all" />
+<link rel="stylesheet" href="../resources/css/contents.css" media="all" />
+<!-- javascript -->
+<script src="../resources/js/lib/jquery-1.12.4.min.js"></script>
+<script src="../resources/js/lib/jquery-ui-1.12.1.min.js"></script>
+<script src="../resources/js/lib/jquery-migrate-1.4.0.js"></script>
+<script src="../resources/js/plugins.js"></script>
+<script src="../resources/js/ui.js"></script>
+<!--[if lt IE 9]>
+  <script src="./resources/js/lib/html5shiv.3.7.3.min.js"></script>
+<![endif]-->
+</head>
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#container">본문 바로가기</a>
+            <a href="#gnb">주메뉴 바로가기</a>
+        </div>
+        <header id="header">
+            <button type="button" class="btn_back" onclick="history.go(-1)"><span class="blind">뒤로가기</span></button>
+            <h1>팝업가이드</h1>
+            <a href="cart.html" class="btn_cart"><span class="blind">장바구니</span><i>10</i></a>
+        </header>
+        <div id="container">
+            <div class="inner">
+                <div style="padding: 40px 0">
+                    <h4 class="fc_pink mb10">팝업 호출</h4>
+                    <p class="mb5"><strong>1. a태그를 사용하여 href에 대상 팝업의 id 지정</strong></p>
+                    <p>
+                        <a href="#popApp" class="button ui-pop-open">앱 팝업</a><br> 
+                        &lt;a href="#popApp" class="button ui-pop-open"&gt;버튼&lt;/a&gt
+                        
+                    </p><br>
+                    <p class="mb5"><strong>2. 함수사용 <br>popOpen(대상 팝업의 id) </strong></p>
+                    <p><button type="button" class="button" onclick="popOpen('#popApp')">앱 팝업</button> <br>
+                        &lt;button class="button" onclick="popOpen('#popApp')"&gt;버튼&lt;/button&gt;</p>
+                    <h4 class="fc_pink mb10 mt30">팝업 닫기</h4>
+                    <p><strong> 1. 대상 팝업의 id  내에 .ui-pop-close 클래스의 버튼으로 닫기</strong> <br> &lt;button class="button ui-pop-open"&gt;버튼&lt;/button&gt; </p><br>
+                    <p><strong> 2. popClose(대상 팝업의 id)</strong><br>&lt;button class="button" onclick="popClose('#popPwChange')"&gt;버튼&lt;/button&gt;</p><br><br>
+                    <h4 class="fc_pink mb10">일반 알럿 호출</h4>
+                    <p class="mb5"><strong>getAlert(알럿메세지)</strong></p>
+                    <button type="button" class="button" onclick="getAlert('사이드메뉴는 9개까지 구매가능 합니다')">알럿팝업</button> <br>
+                    &lt;button class="button" onclick="getAlert('사이드메뉴는 9개까지 구매가능 합니다')"&gt;버튼&lt;/button&gt;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<div id="popApp" class="pop_wrap">
+    <article class="popup pop_app">
+        <div class="pop_head">
+            <h1>미트큐 앱 이용을 위한 권한 안내</h1>
+        </div>
+        <div class="pop_cont">
+            <dl>
+                <dt>필수 접근 권한</dt>
+                <dd class="item1">
+                    <i></i><p>저장소, 기기 및 앱 기록</p>APP읽고, 사용 접근, 앱 상태(버전) 확인
+                </dd>
+                <dd class="item2">
+                    <i></i><p>기기 ID</p>기기 식별 및 광고 트래킹
+                </dd>
+                <dd class="item3">
+                    <i></i><p>WIFI</p>앱 이용 네트워크 연결 체크
+                </dd>
+                <dd class="item4">
+                    <i></i><p>SMS</p>본인인증, 인증번호 확인 및 입력
+                </dd>
+            </dl>
+            <dl>
+                <dt>선택 접근 권한</dt>
+                <dd class="item5">
+                    <i></i><p>Push 알림</p>홍보용 푸쉬 알림 수신 위한 접근
+                </dd>
+            </dl>
+            <ul class="txt_list">
+                <li>선택적 접근 권한은 관련 기능 이용(접근)시 동의 하실 수 있으며, 미동의 시에도 해당 기능 외 앱 서비스 이용 가능합니다.</li>
+                <li>휴대폰 ‘설정>미트큐>앱 권한’ 에서도 설정 변경 하실 수 있습니다.</li>
+            </ul>
+        </div>
+        <div class="pop_btn">
+            <button type="button" class="button h56 w_100 ui-pop-close">확인</button>
+        </div>
+    </article>
+</div>
+<div id="popAlert" class="pop_wrap">
+    <article class="popup pop_alert">
+        <div class="pop_cont">
+            <div id="alertMessage"></div>
+        </div>
+        <div class="pop_btn">
+            <button type="button" class="button h56 w_100" onclick="popClose('#popAlert')">확인</button>
+        </div>
+    </article>
+</div>
+<script>
+function getAlert(msg){
+        $("#alertMessage").html(msg);
+        popOpen('#popAlert');
+    }
+</script>
+</html>

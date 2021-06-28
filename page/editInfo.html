@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Header doc -->
+<title>동원미트큐</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=375,user-scalable=no,viewport-fit=cover">
+<meta name="description" content=""/>
+<meta name="apple-mobile-web-app-title" content="">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:description" content="">
+<link  rel="shortcut icon"  href="../resources/images/favicon.ico"  type="image/x-icon"/>
+<link rel="icon" href="../resources/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../resources/images/favicon.png"/>
+<!-- style -->
+<link rel="stylesheet" href="../resources/css/common.css" media="all"/>
+<link rel="stylesheet" href="../resources/css/contents.css" media="all"/>
+<!-- javascript -->
+<script src="../resources/js/lib/jquery-1.12.4.min.js"></script>
+<script src="../resources/js/lib/jquery-ui-1.12.1.min.js"></script>
+<script src="../resources/js/lib/jquery-migrate-1.4.0.js"></script>
+<script src="../resources/js/plugins.js"></script>
+<script src="../resources/js/ui.js"></script>
+<!--[if lt IE 9]> <script
+src="../resources/js/lib/html5shiv.3.7.3.min.js"></script> <![endif]-->
+</head>
+    <body>
+        <div id="wrap">
+            <div id="skipNavi">
+                <a href="#container">본문 바로가기</a>
+            </div>
+            <header id="header">
+                <button type="button" class="btn_back" onclick="history.go(-1)"><span class="blind">뒤로가기</span></button>
+                <h1>개인정보 수정</h1>
+                <a href="./page/cart.html" class="btn_cart">
+                    <span class="blind">장바구니</span>
+                    <i>10</i>
+                </a>
+            </header>
+            <header id="headerBottom">
+                <ul>
+                    <li class="home">
+                        <a href="index.html">홈</a>
+                    </li>
+                    <li class="search">
+                        <a href="#">검색</a>
+                    </li>
+                    <li class="store">
+                        <a href="./page/.html">단골매장</a>
+                    </li>
+                    <li class="mypage">
+                        <a href="./page/.html">마이</a>
+                    </li>
+                </ul>
+            </header>
+            <div id="container">
+                <div class="inner">
+                    <div class="edit_info_wrap">
+                        <div class="tit_area">
+                            <h3>계정 정보</h3>
+                            <p>미트큐는 최소한의 정보만 수집합니다.</p>
+                        </div>
+                        <div class="inp_area">
+                            <div><p>이름</p><input type="text" class="input w_100" value="홍길동" disabled title="이름입력"></div>
+                            <div class="id">
+                                <p>아이디</p>
+                                <input type="text" class="input w_100" placeholder="아이디를 입력해주세요" title="아이디입력">
+                                <button type="button" class="button">중복확인</button>
+                            </div>
+                            <div>
+                                <p>비밀번호</p>
+                                <input type="password" class="input w_100" placeholder="영문, 숫자 4~20자(특수문자 포함)" title="비밀번호 영문, 숫자 4~20자(특수문자 포함) 입력">
+                                <input type="password" class="input w_100" placeholder="비밀번호 확인" title="비밀번호 확인">
+                            </div>
+                            <div><p>생년월일</p><input type="text" class="input w_100" value="20210210" disabled title="생년월일 입력"></div>
+                            <div><p>휴대폰 번호</p><input type="text" class="input w_100" value="01012341234" disabled title="휴대폰번호 입력"></div>
+                            <div class="email">
+                                <p>이메일 정보 입력</p>
+                                <div>
+                                    <input type="text" class="input" title="이메일 아이디 입력">
+                                    <span class="email_addr"><input type="text" id="emailAddress" class="input" title="이메일 주소 입력"></span>
+                                    <select name="" id="emailAddressSct" class="select" title="이메일 주소 선택">
+                                        <option value="1">직접입력</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="daum.net">daum.net</option>
+                                        <option value="gmail.com">gmail.com</option>
+                                        <option value="nate.com">nate.com</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div><p>성별</p>
+                                <label class="radio">
+                                    <input type="radio" checked="checked" name="gender">
+                                    <i></i>
+                                    <span class="lbl">남자</span>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="gender">
+                                    <i></i>
+                                    <span class="lbl">여자</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="marketing_agree_area">
+                            <h4>마케팅정보 활용동의</h4>
+                            <p>마케팅/홍보를 위하여 아래 항목의 정보를 이용합니다. <br>동의 거부시 할인 및 이벤트 정보 안내 서비스가 제한됩니다.</p>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <i></i>
+                                <span class="lbl">이메일 수신 동의</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <i></i>
+                                <span class="lbl">SMS 수신 동의</span>
+                            </label>
+                        </div>
+                        <div class="join_sns">
+                            <h4>SNS 계정연동</h4>
+                            <div class="join_kakao">
+                                <p>
+                                    <img src="../resources/images/contents/logo_kakao.png" alt="카카오 로고">
+                                    <span>카카오톡</span>
+                                </p>
+                                <button type="button" class="button btn_gray">연결해제</button>
+                            </div>
+                            <div class="join_google">
+                                <p>
+                                    <img src="../resources/images/contents/logo_google.png" alt="구글 로고">
+                                    <span>구글</span>
+                                </p>
+                                <button type="button" class="button btn_pk_white">연결하기</button>
+                            </div>
+                        </div>
+                        <div class="btn_area"><button type="button" class="button w_100">수정</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

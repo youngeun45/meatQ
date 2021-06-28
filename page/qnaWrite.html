@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Header doc -->
+<title>동원미트큐</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=375,user-scalable=no,viewport-fit=cover">
+<meta name="description" content=""/>
+<meta name="apple-mobile-web-app-title" content="">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:description" content="">
+<link  rel="shortcut icon"  href="../resources/images/favicon.ico"  type="image/x-icon"/>
+<link rel="icon" href="../resources/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../resources/images/favicon.png"/>
+<!-- style -->
+<link rel="stylesheet" href="../resources/css/common.css" media="all"/>
+<link rel="stylesheet" href="../resources/css/contents.css" media="all"/>
+<!-- javascript -->
+<script src="../resources/js/lib/jquery-1.12.4.min.js"></script>
+<script src="../resources/js/lib/jquery-ui-1.12.1.min.js"></script>
+<script src="../resources/js/lib/jquery-migrate-1.4.0.js"></script>
+<script src="../resources/js/plugins.js"></script>
+<script src="../resources/js/ui.js"></script>
+<!--[if lt IE 9]> <script
+src="../resources/js/lib/html5shiv.3.7.3.min.js"></script> <![endif]-->
+</head>
+    <body>
+        <div id="wrap">
+            <div id="skipNavi">
+                <a href="#container">본문 바로가기</a>
+            </div>
+            <header id="header">
+                <button type="button" class="btn_back" onclick="history.go(-1)"><span class="blind">뒤로가기</span></button>
+                <h1>문의하기</h1>
+                <a href="./page/cart.html" class="btn_cart">
+                    <span class="blind">장바구니</span>
+                    <i>10</i>
+                </a>
+            </header>
+            <header id="headerBottom">
+                <ul>
+                    <li class="home">
+                        <a href="index.html">홈</a>
+                    </li>
+                    <li class="search">
+                        <a href="#">검색</a>
+                    </li>
+                    <li class="store">
+                        <a href="./page/.html">단골매장</a>
+                    </li>
+                    <li class="mypage">
+                        <a href="./page/.html">마이</a>
+                    </li>
+                </ul>
+            </header>
+            <div id="container">
+                <div class="inner">
+                    <div class="qna_write_wrap">
+                        <ul>
+                            <li><span class="th">문의유형</span>
+                                <span>
+                                    <select name="" id="" class="select w_100 sel_pk" title="문의유형">
+                                        <option value="">문의유형을 선택해주세요.</option>
+                                        <option value="">문의카테고리1</option>
+                                        <option value="">문의카테고리2</option>
+                                        <option value="">문의카테고리3</option>
+                                    </select>
+                                </span>
+                            </li>
+                            <li><span class="th">문의내용</span>
+                                <span><textarea name="" id="" class="textarea w_100" placeholder="한글100자 영문 200자 내 입력" title="내용입력"></textarea>
+    
+                                </span></li>
+                            <li><span class="th">이메일</span><span><input type="text" class="input w_100" title="메일입력" placeholder="이메일을 입력하세요."></span></li>
+                        </ul>
+                        <div class="link_area">
+                            <span>개인정보 취급방침</span>
+                            <em>
+                                <label class="checkbox">
+                                    <input type="checkbox" id="popTerms2Agree">
+                                    <i></i>
+                                </label>
+                                <a href="#popTerms2" class="ui-pop-open">약관보기</a>
+                            </em>
+                        </div>
+                        <button type="button" class="button w_100">문의하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popTerms2" class="pop_wrap">
+            <article class="popup pop_terms">
+                <div class="pop_head">
+                    <h1 class="fc_pink">이용약관</h1>
+                </div>
+                <div class="pop_cont">
+                   <h4>미트큐 개인정보 처리방침</h4>
+                   <textarea name="" id="" class="textarea" readonly title="미트큐 개인정보 처리방침">
+약관
+                   </textarea>
+                </div>
+                <div class="pop_btn">
+                    <button type="button" class="button w_100 h63 btn-agree">동의</button>
+                </div>
+            </article>
+        </div>
+    </body>
+    <script>
+        $(function(){
+            //btn-agree
+            $('.btn-agree').click(function(){
+                var $id = $(this).closest('.pop_wrap').attr('id'),
+                    $pop = '#' + $id,
+                    $chkbox = '#' + $id + 'Agree';
+                    if(!$($chkbox).is(':checked')){
+                        $($chkbox).prop('checked', 'checked');
+                    }
+                popClose($pop)
+            })
+        })
+    </script>
+</html>

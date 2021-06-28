@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Header doc -->
+<title>동원미트큐</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=375,user-scalable=no,viewport-fit=cover">
+<meta name="description" content=""/>
+<meta name="apple-mobile-web-app-title" content="">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:description" content="">
+<link  rel="shortcut icon"  href="../resources/images/favicon.ico"  type="image/x-icon"/>
+<link rel="icon" href="../resources/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../resources/images/favicon.png"/>
+<!-- style -->
+<link rel="stylesheet" href="../resources/css/common.css" media="all"/>
+<link rel="stylesheet" href="../resources/css/contents.css" media="all"/>
+<!-- javascript -->
+<script src="../resources/js/lib/jquery-1.12.4.min.js"></script>
+<script src="../resources/js/lib/jquery-ui-1.12.1.min.js"></script>
+<script src="../resources/js/lib/jquery-migrate-1.4.0.js"></script>
+<script src="../resources/js/plugins.js"></script>
+<script src="../resources/js/ui.js"></script>
+<!--[if lt IE 9]> <script
+src="../resources/js/lib/html5shiv.3.7.3.min.js"></script> <![endif]-->
+</head>
+    <body>
+        <div id="wrap">
+            <div id="skipNavi">
+                <a href="#container">본문 바로가기</a>
+            </div>
+            <header id="header">
+                <button type="button" class="btn_back" onclick="history.go(-1)"><span class="blind">뒤로가기</span></button>
+                <h1>내 배달지</h1>
+                <a href="./page/cart.html" class="btn_cart">
+                    <span class="blind">장바구니</span>
+                    <i>10</i>
+                </a>
+            </header>
+            <header id="headerBottom">
+                <ul>
+                    <li class="home">
+                        <a href="index.html">홈</a>
+                    </li>
+                    <li class="search">
+                        <a href="#">검색</a>
+                    </li>
+                    <li class="store">
+                        <a href="./page/.html">단골매장</a>
+                    </li>
+                    <li class="mypage">
+                        <a href="./page/.html">마이</a>
+                    </li>
+                </ul>
+            </header>
+            <div id="container">
+                <div class="my_delivery_wrap">
+                    <p>내 배달지는 최대 5개까지 등록 하실 수 있습니다.</p>
+                    <ul>
+                        <!-- 등록된 배달지가 없을시 : 등록하는 li인 .register_addr 만 보여지면 됩니다. -->
+                        <li>
+                            <label class="radio">
+                                <input type="radio" name="my_address">
+                                <i></i>
+                                <span class="lbl">
+                                    <em class="tit_addr">집</em>
+                                    <em class="addr">
+                                        <span class="name_store">[수색점] 02-000-0000</span>
+                                        <span>서울시 은평구 증산로 251 씨엔티테크</span>
+                                    </em>
+                                </span>
+                            </label>
+                            <button type="button" class="btn_del"><span class="blind">배달지삭제</span></button>
+                        </li>
+                        <li>
+                            <label class="radio">
+                                <input type="radio" name="my_address">
+                                <i></i>
+                                <span class="lbl">
+                                    <em class="tit_addr">집</em>
+                                    <em class="addr">
+                                        <span class="name_store">[수색점] 02-000-0000</span>
+                                        <span>서울시 은평구 증산로 251 씨엔티테크</span>
+                                    </em>
+                                </span>
+                            </label>
+                            <button type="button" class="btn_del"><span class="blind">배달지삭제</span></button>
+                        </li>
+                        <li>
+                            <label class="radio">
+                                <input type="radio" name="my_address">
+                                <i></i>
+                                <span class="lbl">
+                                    <em class="tit_addr">홍길동</em>
+                                    <em class="addr">
+                                        <span class="name_store">[수색점] 02-000-0000</span>
+                                        <span>서울시 은평구 증산로 251 씨엔티테크 서울시 은평구 증산로 251 씨엔티테크</span>
+                                    </em>
+                                </span>
+                            </label>
+                            <button type="button" class="btn_del"><span class="blind">배달지삭제</span></button>
+                        </li>
+                        <li>
+                            <label class="radio">
+                                <input type="radio" name="my_address">
+                                <i></i>
+                                <span class="lbl">
+                                    <em class="tit_addr">홍길동</em>
+                                    <em class="addr">
+                                        <span class="name_store">[수색점] 02-000-0000</span>
+                                        <span>서울시 은평구 증산로 251 씨엔티테크 서울시 은평구 증산로 251 씨엔티테크</span>
+                                    </em>
+                                </span>
+                            </label>
+                            <button type="button" class="btn_del"><span class="blind">배달지삭제</span></button>
+                        </li>
+                        <li>
+                            <label class="radio">
+                                <input type="radio" name="my_address">
+                                <i></i>
+                                <span class="lbl">
+                                    <em class="tit_addr">홍길동</em>
+                                    <em class="addr">
+                                        <span class="name_store">[수색점] 02-000-0000</span>
+                                        <span>서울시 은평구 증산로 251 씨엔티테크 서울시 은평구 증산로 251 씨엔티테크 씨엔티테크 씨엔티테크</span>
+                                    </em>
+                                </span>
+                            </label>
+                            <button type="button" class="btn_del"><span class="blind">배달지삭제</span></button>
+                        </li>
+                        <li class="register_addr">
+                            <a href="./addressSetting.html">+ 새 배달주소 등록</a>
+                        </li>
+                    </ul>
+                    <div class="inner">
+                        <button type="button" class="button w_100">저장</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

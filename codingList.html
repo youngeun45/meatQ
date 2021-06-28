@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]> <html class="lt-ie10 lt-ie9 lt-ie8" lang="ko"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie10 lt-ie9" lang="ko"> <![endif]-->
+<!--[if IE 9]>    <html class="lt-ie10" lang="ko"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="ko"> <!--<![endif]-->
+<head>
+<!-- Header doc -->
+<title>동원미트큐 코딩리스트</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=1024,user-scalable=no">
+<style>
+#wrap{padding: 1em;min-width:1024px;box-sizing:border-box;padding: 0 100px;box-sizing: border-box;}
+h1{text-align: center;background: #f1f1f1;}
+.box {padding: 1em;border: 1px solid #ccc;margin: 1em 0;}
+.table {width: 100%;border-spacing:0px;border-collapse:collapse;}
+.table th,
+.table td {height: 35px;padding: 5px 10px;font-size: 0.875rem;border: 1px solid #ccc;}
+.table td.tc {text-align-last: center;}
+.table thead th {height: 30px;background: #f1f1f1;}
+.table a {text-decoration: underline;}
+.table .line td {border-top: 3px solid #ccc;}
+.table .finished {background: #fefedc !important;color: #000;}
+.table .two {background: #eee !important;}
+.table .non{background: #ddd !important;}
+.table .top_line td {border-top: 3px solid #ccc;}
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>동원미트큐 모바일 코딩리스트</h1>
+		<div class="box">
+			<ul class="txt_list">
+				<li><strong>문서타입</strong> : HTML5 / CSS3</li>
+				<li><strong>jquery 버전</strong> : jquery-1.12.4.min.js</li>
+				<li><strong>공통부분</strong> : 내용이 없을 때 보여지는 화면 = .empty 클래스사용, 주석처리</li>
+				<!-- <li>기획서 없이 진행. 구조를 알수 없어 요청오는대로 퍼블진행 및 코딩리스트 작성했음을 참고 부탁드립니다.(a태그 링크 비워있음)</li> -->
+			</ul>
+		</div>
+		<table class="table">
+			<colgroup>
+				<col style="width: 33.33%;">
+				<col style="width: 33.33%;">
+				<col style="width: 33.33%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">페이지명</th>
+					<th scope="col">html</th>
+					<th scope="col">비고</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="tc">팝업</td>
+					<td><a href="./page/popup.html" target="_blank">./page/popup.html</a></td>
+					<td>* 팝업 가이드 <br>* 앱 팝업</td>
+				</tr>
+				<tr>
+					<td class="tc">메인</td>
+					<td><a href="./index.html" target="_blank">./index.html</a></td>
+					<td>* &lt;header&gt; 및 &lt;head&gt; include는 index.html에 있는 소스로 부탁드립니다.</td>
+				</tr>
+				<tr>
+					<td class="tc">로그인</td>
+					<td><a href="./page/login.html" target="_blank">./page/login.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">약관동의</td>
+					<td><a href="./page/join1.html" target="_blank">./page/join1.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">회원가입</td>
+					<td><a href="./page/join2.html" target="_blank">./page/join2.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">회원가입 완료</td>
+					<td><a href="./page/joinComplete.html" target="_blank">./page/joinComplete.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">비회원 로그인</td>
+					<td><a href="./page/loginNonMember.html" target="_blank">./page/loginNonMember.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">아이디 찾기</td>
+					<td><a href="./page/findId.html" target="_blank">./page/findId.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">비밀번호 찾기</td>
+					<td><a href="./page/findPw.html" target="_blank">./page/findPw.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">비밀번호 변경</td>
+					<td><a href="./page/changePw.html" target="_blank">./page/changePw.html</a></td>
+					<td>
+						"본인확인을 완료하였습니다." text 노출 / 비노출 체크<br>
+                                : 비밀번호 찾기로 진입시 노출<br>
+                                : 비밀번호 변경으로 진입시 비노출
+					</td>
+				</tr>	
+				<tr>
+					<td class="tc">휴면계정 관리안내</td>
+					<td><a href="./page/inactiveAccount.html" target="_blank">./page/inactiveAccount.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">스토어</td>
+					<td><a href="./page/store.html" target="_blank">./page/store.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">검색</td>
+					<td><a href="./page/search.html" target="_blank">./page/search.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">장바구니</td>
+					<td><a href="./page/cart.html" target="_blank">./page/cart.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">내 배달지</td>
+					<td><a href="./page/mypageDelivery.html" target="_blank">./page/mypageDelivery.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">배달 주소 설정 - 리스트</td>
+					<td><a href="./page/orderDelivery.html" target="_blank">./page/orderDelivery.html</a></td>
+					<td>검색전/검색후 주석처리함. style="display:none" 지우시면 보입니다.</td>
+				</tr>
+				<tr>
+					<td class="tc">배달 주소 설정 - map search</td>
+					<td><a href="./page/addressSetting.html" target="_blank">./page/addressSetting.html</a></td>
+					<td>매장있을때/매장없을때 주석처리함.  style="display:none" 지우시면 보입니다.</td>
+				</tr>
+				<tr>
+					<td class="tc">결제정보</td>
+					<td><a href="./page/payment.html" target="_blank">./page/payment.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">주문완료</td>
+					<td><a href="./page/orderComplete.html" target="_blank">./page/orderComplete.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">주문내역</td>
+					<td><a href="./page/myOrderList.html" target="_blank">./page/myOrderList.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">주문내역 - 상세</td>
+					<td><a href="./page/myOrderDetail.html" target="_blank">./page/myOrderDetail.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">환경설정</td>
+					<td><a href="./page/setting.html" target="_blank">./page/setting.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">개인정보수정 - lock</td>
+					<td><a href="./page/editInfoLock.html" target="_blank">./page/editInfoLock.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">개인정보수정</td>
+					<td><a href="./page/editInfo.html" target="_blank">./page/editInfo.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">비밀번호변경 - lock</td>
+					<td><a href="./page/changePwLock.html" target="_blank">./page/changePwLock.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">회원탈퇴</td>
+					<td><a href="./page/quit.html" target="_blank">./page/quit.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">쿠폰함</td>
+					<td><a href="./page/myCoupon.html" target="_blank">./page/myCoupon.html</a></td>
+					<td>
+						디자인이랑 다르게 작업함 <br>
+						- 코드입력input을 내 쿠폰 탭에만 넣음<br>
+						- 유의사항은 모든탭에 넣음 (empty화면에도)
+					</td>
+				</tr>
+				<tr>
+					<td class="tc">이벤트 리스트</td>
+					<td><a href="./page/eventList.html" target="_blank">./page/eventList.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">이벤트 상세</td>
+					<td><a href="./page/eventView.html" target="_blank">./page/eventView.html</a></td>
+					<td>보통 상세페이지는 통이미지 사용하기 때문에 디자인 시안 하단 유의사항 작업X</td>
+				</tr>
+            </tbody>
+        </table>
+		<p>6/21 공유</p>
+		<table class="table">
+			<colgroup>
+				<col style="width: 33.33%;">
+				<col style="width: 33.33%;">
+				<col style="width: 33.33%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">페이지명</th>
+					<th scope="col">html</th>
+					<th scope="col">비고</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="tc">매장리스트</td>
+					<td><a href="./page/storeList.html" target="_blank">./page/storeList.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">매장상세</td>
+					<td><a href="./page/storeView.html" target="_blank">./page/storeView.html</a></td>
+					<td>* #header 에 hd_menu 클래스가 추가되어야함</td>
+				</tr>
+				<tr>
+					<td class="tc">메뉴상세</td>
+					<td><a href="./page/menuView.html" target="_blank">./page/menuView.html</a></td>
+					<td>* #header 에 hd_menu 클래스가 추가되어야함</td>
+				</tr>
+				<tr>
+					<td class="tc">마이페이지</td>
+					<td><a href="./page/myPage.html" target="_blank">./page/myPage.html</a></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<p>6/22 공유</p>
+		<table class="table">
+			<colgroup>
+				<col style="width: 33.33%;">
+				<col style="width: 33.33%;">
+				<col style="width: 33.33%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">페이지명</th>
+					<th scope="col">html</th>
+					<th scope="col">비고</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="tc">매장리뷰</td>
+					<td><a href="./page/storeReview.html" target="_blank">./page/storeReview.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">리뷰쓰기</td>
+					<td><a href="./page/reviewWrite.html" target="_blank">./page/reviewWrite.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">리뷰완료</td>
+					<td><a href="./page/reviewComplete.html" target="_blank">./page/reviewComplete.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">리뷰관리</td>
+					<td><a href="./page/myReview.html" target="_blank">./page/myReview.html</a></td>
+					<td>* 리뷰삭제 팝업 포함</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>6/23 공유</p>
+		<table class="table">
+			<colgroup>
+				<col style="width: 33.33%;">
+				<col style="width: 33.33%;">
+				<col style="width: 33.33%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">페이지명</th>
+					<th scope="col">html</th>
+					<th scope="col">비고</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="tc">추천레시피 - 리스트</td>
+					<td><a href="./page/recipeList.html" target="_blank">./page/recipeList.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">추천레시피 - 상세</td>
+					<td><a href="./page/recipeView.html" target="_blank">./page/recipeView.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">표기사항</td>
+					<td><a href="./page/notationContent.html" target="_blank">./page/notationContent.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">faq</td>
+					<td><a href="./page/faq.html" target="_blank">./page/faq.html</a></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<p>6/24 공유</p>
+		<table class="table">
+			<colgroup>
+				<col style="width: 33.33%;">
+				<col style="width: 33.33%;">
+				<col style="width: 33.33%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">페이지명</th>
+					<th scope="col">html</th>
+					<th scope="col">비고</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="tc">공지사항</td>
+					<td><a href="./page/notice.html" target="_blank">./page/notice.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">문의하기</td>
+					<td><a href="./page/qnaWrite.html" target="_blank">./page/qnaWrite.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">문의 - 리스트</td>
+					<td><a href="./page/qnaList.html" target="_blank">./page/qnaList.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">문의 - 상세</td>
+					<td><a href="./page/qnaView.html" target="_blank">./page/qnaView.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">가맹상담</td>
+					<td><a href="./page/franchise.html" target="_blank">./page/franchise.html</a></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+  </div>
+</body>
+</html>

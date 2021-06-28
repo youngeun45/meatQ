@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Header doc -->
+<title>동원미트큐</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=375,user-scalable=no,viewport-fit=cover">
+<meta name="description" content=""/>
+<meta name="apple-mobile-web-app-title" content="">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:description" content="">
+<link  rel="shortcut icon"  href="../resources/images/favicon.ico"  type="image/x-icon"/>
+<link rel="icon" href="../resources/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../resources/images/favicon.png"/>
+<!-- style -->
+<link rel="stylesheet" href="../resources/css/common.css" media="all"/>
+<link rel="stylesheet" href="../resources/css/contents.css" media="all"/>
+<!-- javascript -->
+<script src="../resources/js/lib/jquery-1.12.4.min.js"></script>
+<script src="../resources/js/lib/jquery-ui-1.12.1.min.js"></script>
+<script src="../resources/js/lib/jquery-migrate-1.4.0.js"></script>
+<script src="../resources/js/plugins.js"></script>
+<script src="../resources/js/ui.js"></script>
+<!--[if lt IE 9]> <script
+src="../resources/js/lib/html5shiv.3.7.3.min.js"></script> <![endif]-->
+</head>
+    <body>
+        <div id="wrap">
+            <div id="skipNavi">
+                <a href="#container">본문 바로가기</a>
+            </div>
+            <header id="header" class="hd_menu"> <!-- * #header 에 hd_menu 클래스가 추가되어야함 -->
+                <button type="button" class="btn_back" onclick="history.go(-1)"><span class="blind">뒤로가기</span></button>
+                <h1>메뉴상세</h1>
+                <a href="./page/cart.html" class="btn_cart">
+                    <span class="blind">장바구니</span>
+                    <i>10</i>
+                </a>
+            </header>
+            <header id="headerBottom">
+                <ul>
+                    <li class="home">
+                        <a href="index.html">홈</a>
+                    </li>
+                    <li class="search">
+                        <a href="#">검색</a>
+                    </li>
+                    <li class="store">
+                        <a href="./page/.html">단골매장</a>
+                    </li>
+                    <li class="mypage">
+                        <a href="./page/.html">마이</a>
+                    </li>
+                </ul>
+            </header>
+            <div id="container">
+                <div class="menu_store_view_wrap">
+                    <div class="store_main_img">
+                        <!-- 매장 사진 있을때 .swiper-container 노출-->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="../resources/images/contents/@img_store.jpg" alt="매장이미지"></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="../resources/images/contents/@img_store.jpg" alt="매장이미지"></a>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- 매장 사진 없을때 아래 .swiper-slide 노출-->
+                        <!-- <div class="swiper-slide">
+                            <a href="#"><img src="../resources/images/contents/@img_store_view_empty.jpg" alt="매장이미지"></a>
+                        </div> -->
+                    </div>
+                    <div class="menu_store_cont">
+                        <div class="store_info_wrap">
+                            <div class="inner">
+                                <div class="top_tit_wrap">
+                                    <p class="store_name">맛있는 미트큐 정육점 증산점</p>
+                                    <div class="review_score"><a href="#"><i></i> 4.8 <span>(120) ▶</span></a></div>
+                                </div>
+                                <div class="store_info1">
+                                    <div>
+                                        <p><span>최소주문</span>12,000원</p>
+                                        <p>증산동</p>
+                                    </div>
+                                    <div>
+                                        <p><span>배달비</span>2,000~4,000원</p>
+                                        <p><i class="ic_map"></i>1.2km</p>
+                                    </div>
+                                </div>
+                                <div class="store_info2">
+                                    <h3>가게소개</h3>
+                                    <p>안녕하세요. 증산점입니다. 깨끗하고 품질 좋은 고기만 사용하겠습니다.</p>
+                                </div>
+                                <!-- 쿠폰이 없는 매장은 .store_coupon_area를 안보임처리 요망('hide'클래스 넣는방법도 있음)-->
+                                <div class="store_coupon_area">
+                                    <!-- 쿠폰받기 전 -->
+                                    <button type="button" class="button btn_pk_white w_100">[증산점] 5,000원 쿠폰 받기</button>
+                                    <!-- 쿠폰받기 후 -->
+                                    <!-- <button type="button" class="button btn_pk_white w_100 disabled">[증산점] 5,000원 쿠폰 받기 완료</button> -->
+                                </div>
+                            </div>
+                            <div class="store_category_area">
+                                <!-- 해당페이지에서  swiper-slide cate3 on처럼 on이 들어가면 swiper 앞쪽에 위치 됩니다. -->
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide cate1">
+                                            <a href="#"><i></i>한우</a>
+                                        </div>
+                                        <div class="swiper-slide cate2">
+                                            <a href="#"><i></i>육우</a>
+                                        </div>
+                                        <div class="swiper-slide cate3 on">
+                                            <a href="#"><i></i>한돈</a>
+                                        </div>
+                                        <div class="swiper-slide cate4">
+                                            <a href="#"><i></i>수입우육</a>
+                                        </div>
+                                        <div class="swiper-slide cate5">
+                                            <a href="#"><i></i>수입돈육</a>
+                                        </div>
+                                        <div class="swiper-slide cate6">
+                                            <a href="#"><i></i>계육</a>
+                                        </div>
+                                        <div class="swiper-slide cate7">
+                                            <a href="#"><i></i>양념육</a>
+                                        </div>
+                                        <div class="swiper-slide cate8">
+                                            <a href="#"><i></i>기타</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_menu_wrap">
+                            <div class="inner">
+                                <h3>대표메뉴</h3>
+                                <ul>
+                                    <li><a href="#">
+                                        <div class="menu_img">
+                                            <img src="../resources/images/contents/@img_menu.jpg" alt="메뉴이미지">
+                                        </div>
+                                        <div class="menu_info">
+                                            <p>한돈 삽겹살 삽겹살(400g)</p>
+                                            <p>11,000원</p>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <div class="menu_img">
+                                            <img src="../resources/images/contents/@img_menu.jpg" alt="메뉴이미지">
+                                        </div>
+                                        <div class="menu_info">
+                                            <p>한돈 삽겹살 삽겹살(400g)</p>
+                                            <p>11,000원</p>
+                                        </div>
+                                    </a></li>
+                                    <!-- 대표메뉴 없을 때 -->
+                                    <!-- <li class="empty"><a href="#">
+                                        <div class="menu_img">
+                                            <img src="../resources/images/contents/img_empty.jpg" alt="메뉴이미지">
+                                        </div>
+                                    </a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu_wrap">
+                            <h3>메뉴소개</h3>
+                            <ul>
+                                <li><a href="#">
+                                    <div class="menu_info">
+                                        <p>한돈 삽겹살 한돈 삽겹살 한돈 삽겹살한돈 삽겹살한돈 삽겹살한돈 삽겹살한돈 삽겹살(400g)</p>
+                                        <p>11,000원</p>
+                                    </div>
+                                    <div class="menu_img">
+                                        <img src="../resources/images/contents/@img_menu.jpg" alt="메뉴이미지">
+                                    </div>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="menu_info">
+                                        <p>한돈 삽겹살(400g)</p>
+                                        <p>11,000원</p>
+                                    </div>
+                                    <div class="menu_img">
+                                        <img src="../resources/images/contents/@img_menu.jpg" alt="메뉴이미지">
+                                    </div>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="menu_info">
+                                        <p>한돈 삽겹살(400g)</p>
+                                        <p>11,000원</p>
+                                    </div>
+                                    <div class="menu_img">
+                                        <img src="../resources/images/contents/@img_menu.jpg" alt="메뉴이미지">
+                                    </div>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(function () {
+            //store top img
+            var swiper = new Swiper('.store_main_img .swiper-container', {
+                slidesPerView: 1,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'fraction'
+                }
+            });
+            //store menu category
+            var $on = $('.store_category_area .swiper-container .on').index();
+            var swiper = new Swiper('.store_category_area .swiper-container', {
+                slidesPerView: 'auto',
+                freeMode: true,
+                paginationClickable: true,
+                initialSlide:$on-1
+            });
+        })
+    </script>
+</html>
